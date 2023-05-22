@@ -1,0 +1,55 @@
+.calc {
+    width: 100%;
+    @include flex(row, center, no-wrap);
+
+    &__wrapper {
+        width: 400px;
+        margin-top: 30px;
+        padding: 20px;
+        background-color: #1c1c1c;
+        border-radius: 30px;
+    }
+
+    &__display {
+        width: 100%;
+        padding: 30px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        @include font(30px, 'Montserrat', 400, rgb(255, 255, 255), inherit, right, 30px);
+
+        &::placeholder {
+            color: #fff
+        }
+    }
+
+    &__keypad {
+        @include flex(row, space-between, wrap);
+
+        &-key {
+            flex-basis: 80px;
+            margin: 10px 0;
+            height: 80px;
+            background-color: gray;
+            border-radius: 50%;
+            border: none;
+            @include font(30px, 'Montserrat', 400, #fff, inherit, center, 30px);
+            
+        }
+        &-equal{
+            flex-basis: 180px;
+            border-radius: 30px;
+            background-color: orange;
+            color: #fff;
+        }
+        &-white{
+            background-color: #fff;
+            color: gray;
+        }
+        &-orange{
+            background-color: orange;
+            color: #fff;
+        }
+
+    }
+}

@@ -1,0 +1,17 @@
+.header {
+    width: 100%;
+    border-bottom: 1px solid black;
+
+    &__wrapper {
+        @include flex(row, center, no-wrap);
+    }
+
+    &__link {
+        padding: 20px 0;
+        @include font(20px, 'Montserrat', 400, black, inherit, left, 20px);
+    }
+
+    &__link+&__link {
+        margin-left: 20px;
+    }
+}

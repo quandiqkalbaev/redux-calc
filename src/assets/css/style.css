@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #fcfcfc;
+  min-height: 100vh;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+.header__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: no-wrap;
+}
+.header__link {
+  padding: 20px 0;
+  font-size: 20px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  color: black;
+  text-transform: inherit;
+  text-align: left;
+  line-height: 20px;
+}
+.header__link + .header__link {
+  margin-left: 20px;
+}
+
+.calc {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: no-wrap;
+}
+.calc__wrapper {
+  width: 400px;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #1c1c1c;
+  border-radius: 30px;
+}
+.calc__display {
+  width: 100%;
+  padding: 30px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  text-transform: inherit;
+  text-align: right;
+  line-height: 30px;
+}
+.calc__display::placeholder {
+  color: #fff;
+}
+.calc__keypad {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.calc__keypad-key {
+  flex-basis: 80px;
+  margin: 10px 0;
+  height: 80px;
+  background-color: gray;
+  border-radius: 50%;
+  border: none;
+  font-size: 30px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  color: #fff;
+  text-transform: inherit;
+  text-align: center;
+  line-height: 30px;
+}
+.calc__keypad-equal {
+  flex-basis: 180px;
+  border-radius: 30px;
+  background-color: orange;
+  color: #fff;
+}
+.calc__keypad-white {
+  background-color: #fff;
+  color: gray;
+}
+.calc__keypad-orange {
+  background-color: orange;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */

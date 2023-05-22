@@ -1,0 +1,31 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #fcfcfc;
+    min-height: 100vh;
+    position: relative;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+}
+
+@import "./reset";
+@import "./vars";
+@import "./fonts";
+@import "./mixins";
+
+@import "../../components/header/header";
+@import "../../components/calculator/calculator";
