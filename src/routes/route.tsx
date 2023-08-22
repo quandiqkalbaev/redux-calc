@@ -8,7 +8,6 @@ export default function AppRoute(){
             <Routes>
                 <Route path="/calculator" element={<Calculator/>}/>
                 <Route path="/" element={<Calculator/>}/>
-                <Route path="/task" element={<Task/>}/>git chekoutg
             </Routes>
         </div>
     )
